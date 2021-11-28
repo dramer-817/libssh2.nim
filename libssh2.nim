@@ -44,13 +44,13 @@ type
   Sftp* {.final, pure.} = ptr object
   SftpHandle* {.final, pure.} = ptr object
   SftpAttributes* {.final, pure.} = object
-    flags*: uint32
+    flags*: uint64
     filesize*: uint64
-    uid*: uint32
-    gid*: uint32
-    permissions*: uint32
-    atime*: uint32
-    mtime*: uint32
+    uid*: uint64
+    gid*: uint64
+    permissions*: uint64
+    atime*: uint64
+    mtime*: uint64
 
   SftpStatVFS* {.final, pure.} = ptr object
     f_bsize*: uint64
